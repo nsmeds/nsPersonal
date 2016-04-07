@@ -11,9 +11,6 @@ h3 {
 html, body {
   height:100%;
   min-height: 100vh;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth; // Added in from answer from Felix
-    overflow-x: scroll;
 }
 
 body {
@@ -83,8 +80,19 @@ footer ul li {
   padding: 8% 15%;
 }
 
+#contactform input,
+#contactform textarea {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 footer {
+  display: flex;
   order: 3;
-    flex-shrink: 0;
-    flex-basis: 50px;
+  flex-shrink: 0;
+  flex-basis: 50px;
+}
+
+footer ul li a {
+  padding: 15px 10px 5px 10px ;
 }

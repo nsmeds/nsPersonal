@@ -80,10 +80,15 @@ footer ul li {
   padding: 8% 15%;
 }
 
-#contactform input,
-#contactform textarea {
+input,
+textarea {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+textarea {
+  height: 8em;
+  width: 20em;
 }
 
 footer {

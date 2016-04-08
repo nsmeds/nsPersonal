@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
+  color: hsla(190,50%,10%,0.8);
 }
 
 header {
@@ -62,7 +63,7 @@ nav ul,
 footer ul {
   display: flex;
   justify-content: center;
-  flex-basis: 33.3%;
+/*  flex-basis: 33.3%;*/
   margin: 5px auto;
 }
 
@@ -89,6 +90,10 @@ textarea {
 textarea {
   height: 8em;
   width: 20em;
+}
+
+.button {
+  color: hsla(190,50%,10%,0.9);
 }
 
 footer {

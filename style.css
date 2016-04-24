@@ -121,6 +121,11 @@ h2 {
   font-weight: 300;
 }
 
+#projects ul li {
+  list-style: disc;
+  margin-top: 1em;
+}
+
 form {
   margin: 1em 0px;
 }
@@ -137,7 +142,17 @@ textarea {
 }
 
 .button {
-  color: hsla(190,50%,10%,0.9);
+  color: inherit;
+  background-color: hsla(0,100%,100%,0);
+  border-radius: 3px;
+  font-weight: 400;
+  border: 1px solid white;
+}
+
+.button:active {
+  background-color: hsla(0,100%,100%,0.3);
+  border-color: transparent;
+  box-shadow: inset 1 5px 5px -5px hsla(190,10%,10%,1);
 }
 
 

@@ -67,7 +67,7 @@
           function displayTextPost(posts){
           if(posts == null) return;
           $('#tumblrfeed').append('<p><h3><a href="'+posts['url']+'" target=_new>'+posts['regular-title']+"</a></h3>");
-          $('#tumblrfeed').append(posts['regular-body']+'<h6>'+posts['date']+'</h6></p>');
+          $('#tumblrfeed').append(posts['regular-body']+'<h6>'+posts['date']+'</h6></p><hr>');
           }
 
           function displayLinkPost(posts){

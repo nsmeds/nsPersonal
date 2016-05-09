@@ -27,20 +27,11 @@
     <div id="container">
         <div id="about" class="bodyDiv">
           <h2>About Me</h2>
-          <p>Front-end developer with a focus on strong foundations in HTML5, CSS3 and JavaScript.</p>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>Git</li>
-            <li>Sketch</li>
-            <li>Adobe CS</li>
-          </ul>
+          <p>Front-end developer based in Portland, Oregon, with a focus on strong foundations in HTML5, CSS3 and JavaScript.</p>
+          <p>I'm experienced with jQuery and Bootstrap, and I appreciate the benefits of modern libraries and frameworks, especially when it comes to browser compatibility and optimized workflow. My creative process also includes Sketch, Adobe CS, Git, npm and many command-line tools.</p>
         </div>
         <div id="projects" class="bodyDiv">
-          <h2>Projects</h2>
+          <h2>Recent Projects</h2>
           <ul>
             <li><a href="http://nsmeds.github.io/cityGuide/">Single-page, responsive guide to Portland, Oregon</a></li>
             <li><a href="http://nsmeds.github.io/imggal/">Simple, responsive lightbox image gallery</a></li>
@@ -69,7 +60,7 @@
           function displayTextPost(posts){
           if(posts == null) return;
           $('#tumblrfeed').append('<p><h3><a href="'+posts['url']+'" target=_new>'+posts['regular-title']+"</a></h3>");
-          $('#tumblrfeed').append(posts['regular-body']+'<h6>'+posts['date']+'</h6></p><hr>');
+          $('#tumblrfeed').append(posts['regular-body']+'<h6>'+posts['date']+'</h6></p>');
           }
 
           function displayLinkPost(posts){

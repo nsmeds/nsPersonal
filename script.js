@@ -1,3 +1,5 @@
+// Not currently used in project. May try to get it working later but I think it's incompatible with my layout.
+
 function scrollToTop(scrollDuration) {
     var   scrollHeight = window.scrollY,
             scrollStep = Math.PI / ( scrollDuration / 15 ),

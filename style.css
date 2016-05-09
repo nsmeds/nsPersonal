@@ -34,7 +34,8 @@ header {
   background-color: hsla(10,50%,100%,0.5);
   order: 1;
   flex-shrink: 0;
-  padding-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   font-weight: 300;
 }
 
@@ -62,12 +63,12 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
-nav h1,
-nav h3 {
-  align-self: center;
+#name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -85,7 +86,13 @@ nav ul,
 footer ul {
   display: flex;
   justify-content: center;
-/*  flex-basis: 33.3%;*/
+}
+
+nav ul {
+  margin: 15px auto 0px auto;
+}
+
+footer ul {
   margin: 20px auto 15px auto;
 }
 
@@ -219,6 +226,21 @@ footer ul li svg:active {
     align-self: center;
   }
   
+  nav {
+    flex-direction: row;
+  }
+  
+  #name {
+    align-items: flex-start;
+    padding-left: 5vw;
+  }
+  
+  nav ul {
+    margin-right: 0;
+    align-self: flex-start;
+    padding-right: 5vw;
+  }
+  
   #about,
   #projects,
   #blog {
@@ -235,6 +257,7 @@ footer ul li svg:active {
   }
   
 @media screen and (min-width: 1024px) {
+  
   #container {
     flex-direction: row;
     background: linear-gradient(hsla(10,50%,100%,0.5), transparent),  

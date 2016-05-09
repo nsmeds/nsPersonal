@@ -135,7 +135,7 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 0.4em;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.5em;
   align-self: center;
   border-bottom: 1px solid white;
 }
@@ -200,7 +200,7 @@ h6 {
 }
 
 #blog h6:last-of-type {
-  display: none;
+  border: none;
 }
 
 .bodyDiv:last-of-type {   
@@ -245,17 +245,15 @@ footer ul li svg:active {
 @media screen and (min-width: 641px) {
   .bodyDiv h2,
   .bodyDiv p,
-  .bodyDiv input,
-  .bodyDiv textarea,
   .bodyDiv ul,
   form,
   #tumblrfeed {
-    max-width: 500px;
+    max-width: 50vw;
     align-self: center;
   }
   
   .bodyDiv {
-    padding: 5vh 5vw;
+    padding: 10vh 5vw;
   }
   
   nav {
@@ -268,7 +266,7 @@ footer ul li svg:active {
   }
   
   nav ul {
-    margin-right: 0;
+    margin-right: 5vw;
     align-self: flex-start;
   }
   

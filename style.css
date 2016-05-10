@@ -24,14 +24,14 @@ body {
   flex-direction: column;
   font-family: 'Lato', sans-serif;
   color: #fff;
-  background: hsla(190,80%,100%,0.1);
-  background-image: url(bluemtn.jpg);
+  background: hsla(200,80%,10%,1);
+  background-image: url(bluemtn1280.jpg);
+  background-size: 1920px;
   font-weight: 300;
 }
 
 header {
   max-width: 100%;
-  background-color: hsla(190,80%,100%,0.2);
   order: 1;
   flex-shrink: 0;
   padding-top: 0.5em;
@@ -41,7 +41,7 @@ header {
 
 header,
 footer {
-  background-color: hsla(190,80%,100%,0.2);
+  background-color: hsla(200,50%,100%,0.1);
 }
 
 a {
@@ -57,6 +57,25 @@ header a:hover {
 
 header a:active {
   background-color: hsla(190,80%,100%,0.4);
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.5em;
+  align-self: center;
+  border-bottom: 1px solid white;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h6 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #wrap {
@@ -122,31 +141,17 @@ nav ul li a {
 }
 
 .bodyDiv {
-  background: linear-gradient(hsla(10,50%,100%,0.3), transparent);
+  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
   box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
-  min-height: 78vh;
+  min-height: 79vh;
   padding: 7vh 7vw;
   display: flex;
   flex-direction: column;
+  color: hsl(10,50%,100%);
 }
 
-h2 {
-  font-size: 1.3em;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 0.4em;
-  padding-bottom: 0.5em;
-  align-self: center;
-  border-bottom: 1px solid white;
-}
-
-h3 {
-  font-weight: 300;
-}
-
-h6 {
-  font-weight: 300;
-  text-transform: uppercase;
+.bodyDiv:nth-of-type(even) {
+  background: linear-gradient(hsla(100,50%,20%,0.2), hsla(200,50%,20%,0.9));
 }
 
 #about ul {
@@ -158,10 +163,6 @@ h6 {
 
 #about li {
   margin: 0.5em 1em 0.5em 0em;
-}
-
-#projects li {
-  margin: 0.5em;
 }
 
 #about ul li:nth-child(odd) {
@@ -176,13 +177,35 @@ h6 {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+#projects li {
+  margin: 0.5em 0.5em 1em 0.5em;
+  font-size: 1em;
+}
+
+.description {
+  text-indent: 0.1em;
+  font-size: 0.9em;
+  padding-top: 0.1em;
+}
+
+.description:before {
+  font-size: 0.8em;
+  content:"• ";
+}
+
+#blog {
+  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
+}
   
 #blog h3 {
   font-weight: 100;
-  margin: 0.5em 0;
+  margin: 0.4em 0;
+  font-size: 1.3em;
 }
 
 #blog p {
+  font-weight: 300;
   margin-bottom: 1em;
 }
 
@@ -190,8 +213,8 @@ h6 {
   margin: 0;
 }
 
-#blog p a {
-  color: hsl(190,80%,90%);
+.bodyDiv a {
+  color: hsl(190,100%,80%);
 }
 
 #blog h6 {
@@ -248,7 +271,7 @@ footer ul li svg:active {
   .bodyDiv ul,
   form,
   #tumblrfeed {
-    max-width: 50vw;
+    max-width: 560px;
     align-self: center;
   }
   
@@ -262,11 +285,11 @@ footer ul li svg:active {
   
   #name {
     align-items: flex-start;
-    padding-left: 5vw;
+    flex-grow: 1;
+    padding-left: 3vw;
   }
   
   nav ul {
-    margin-right: 5vw;
     align-self: flex-start;
   }
   
@@ -285,6 +308,10 @@ footer ul li svg:active {
   }
   
 @media screen and (min-width: 1024px) {
+ 
+  
+  .bodyDiv:nth-of-type(even) {
+    background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));}
   
   #container {
     flex-direction: row;
